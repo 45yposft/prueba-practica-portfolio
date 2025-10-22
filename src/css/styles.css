@@ -77,13 +77,14 @@ body {
 .project__img {
   display: flex;
   justify-content: center;
-  padding: 0 0 12px;
+  padding: 0 0 24px;
 
 }
 
 .project__button {
   display: flex;
   justify-content: center;
+  margin: 12px 0;
 }
 
 button {
