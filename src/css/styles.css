@@ -1,0 +1,86 @@
+@import url('root.css');
+@import url('fonts.css');
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-image: linear-gradient(180deg,rgba(5, 0, 74, 1) 0%, rgba(9, 9, 121, 1) 40%, rgba(0, 174, 209, 1) 100%);
+  background-repeat: no-repeat;
+  color: var(--clr-white);
+}
+
+.navbar__list {
+  display: flex;
+  padding: 12px 18px;
+  gap: 1em;
+  justify-content: center;
+}
+
+.navbar__list--item {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: var(--font-prim);
+}
+
+.portfolio__intro {
+  width: 80%;
+  min-height: 1080px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+}
+
+.portfolio__intro--aboutme {
+  padding: 30px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5em;
+  font-family: var(--font-sec);
+  font-size: 14px;
+}
+
+#aboutme {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0 0 12px;
+  font-family: var(--font-prim);
+  letter-spacing: 1.4;
+}
+
+.projects__card {
+  font-family: var(--font-ter);
+}
+
+.portfolio__intro--experience {
+  display: flex;
+  flex-flow: column;
+  gap: .5em;
+  font-family: var(--font-ter);
+  font-size: 14px;
+}
+
+.experience {
+  font-family: var(--font-prim);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1.4;
+}
+
+button {
+  color: var(--clr-white);
+  font-family: var(--font-ter);
+}
+
+.btn__github {
+  border: 2px solid transparent;
+  border-radius: 100vmax;
+  padding: 12px 20px;
+  margin: 12px 0;
+  background-color: #2727daf0;
+  &:hover {
+    background-color: var(--clr-lightblue);
+  }
+}

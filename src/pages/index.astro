@@ -1,32 +1,41 @@
 ---
+import '../css/reset.css'
+import '../css/root.css'
+import '../css/styles.css'
 import Plantilla from "../layout/plantilla.astro";
+import Navbar from "../components/navbar.astro";
 import Button from "../components/button.astro";
 import { Image } from 'astro:assets';
 const {photo} = Astro.props;
+let btngithub = "btn__github";
 ---
 <Plantilla>
+  <Navbar />
   <section class="portfolio__intro">
     <article class="portfolio__intro--aboutme">
-      <h1>Mi portafolio</h1>
+      <div>
+        <h1 id="aboutme">Mi portafolio</h1>
+        <!-- Image -->
+      </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est et unde iste impedit, excepturi, aperiam eos repellendus error hic, cupiditate sequi delectus suscipit repudiandae dicta. Nam enim cupiditate unde dignissimos?</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eos impedit rem ut enim adipisci eligendi, provident repudiandae molestias repellendus maxime necessitatibus laudantium minima eius? Facilis neque excepturi cumque eum!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit soluta odio ipsa delectus eligendi officia rem enim vitae minima, hic porro quam commodi repellat nesciunt exercitationem! Deleniti, tenetur nobis.</p>
     </article>
     <article class="portfolio__intro--projects">
       <div class="projects__container">
-        <div class="projects__card">
+        <div class="projects__card" id="project">
           <!-- <Image src={photo} alt="Imagen proyecto" /> -->
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aspernatur? Illum, nam consequatur molestias suscipit iure incidunt consequuntur similique aperiam repellendus ipsa aut quaerat neque excepturi temporibus. Optio, itaque corporis.</p>
-          <Button>
+          <Button btn={btngithub}>
             Abrir en Github
           </Button>
         </div>
       </div>
     </article>
     <article class="portfolio__intro--experience">
-      <h2>Experiencia laboral</h2>
+      <h2 class="experience" id="experience">Experiencia laboral</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum magnam assumenda veniam labore vel. Eos itaque perspiciatis consequuntur labore repellat esse quam quos, exercitationem blanditiis quaerat adipisci voluptatem sequi impedit.</p>
-      <h2>Experiencia academica</h2>
+      <h2 class="experience" >Experiencia academica</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste dolorum, ducimus laboriosam consequuntur ullam architecto. Amet ducimus consectetur quam explicabo minus quo, sequi optio totam fuga blanditiis exercitationem qui!</p>
     </article>
   </section>
