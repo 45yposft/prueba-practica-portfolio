@@ -97,6 +97,7 @@ button {
   padding: 12px 20px;
   margin: 12px 0;
   background-color: #2727daf0;
+  transition: .4s all;
   &:hover {
     background-color: var(--clr-lightblue);
   }
@@ -110,5 +111,12 @@ button {
   font-size: 14px;
 }
 
+.footer {
+  height: 150px;
+  font-family: var(--font-ter);
+  color: var(--clr-black);
+}
 
-
+.highlighted {
+  font-weight: 600;
+}
