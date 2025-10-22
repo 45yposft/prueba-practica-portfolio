@@ -1,0 +1,9 @@
+@import url('root.css');
+
+body {
+  background-image: linear-gradient(180deg,rgba(5, 0, 74, 1) 0%, rgba(9, 9, 121, 1) 40%, rgba(0, 174, 209, 1) 100%);
+  background-repeat: no-repeat;
+  height: 100vmax;
+  color: var(--clr-white);
+}
+
