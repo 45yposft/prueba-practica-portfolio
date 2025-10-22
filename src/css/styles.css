@@ -42,6 +42,14 @@ body {
   font-size: 14px;
 }
 
+.aboutme__presentation {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 28px;
+}
+
 #aboutme {
   font-size: 30px;
   font-weight: 600;
@@ -50,23 +58,32 @@ body {
   letter-spacing: 1.4;
 }
 
-.projects__card {
-  font-family: var(--font-ter);
-}
-
-.portfolio__intro--experience {
-  display: flex;
-  flex-flow: column;
-  gap: .5em;
-  font-family: var(--font-ter);
-  font-size: 14px;
-}
-
-.experience {
+.article__title {
   font-family: var(--font-prim);
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 1.4;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 20px;
+}
+
+.projects__card {
+  font-family: var(--font-ter);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project__img {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 12px;
+
+}
+
+.project__button {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -80,7 +97,26 @@ button {
   padding: 12px 20px;
   margin: 12px 0;
   background-color: #2727daf0;
+  transition: .4s all;
   &:hover {
     background-color: var(--clr-lightblue);
   }
+}
+
+.portfolio__intro--experience {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+  font-family: var(--font-ter);
+  font-size: 14px;
+}
+
+.footer {
+  height: 150px;
+  font-family: var(--font-ter);
+  color: var(--clr-black);
+}
+
+.highlighted {
+  font-weight: 600;
 }
