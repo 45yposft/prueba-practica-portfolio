@@ -6,16 +6,17 @@ import Plantilla from "../layout/plantilla.astro";
 import Navbar from "../components/navbar.astro";
 import Button from "../components/button.astro";
 import { Image } from 'astro:assets';
-const {photo} = Astro.props;
+import user from '../assets/user.svg';
+import photo from '../assets/proy.png';
 let btngithub = "btn__github";
 ---
 <Plantilla>
   <Navbar />
   <section class="portfolio__intro">
     <article class="portfolio__intro--aboutme">
-      <div>
+      <div class="aboutme__presentation">
         <h1 id="aboutme">Mi portafolio</h1>
-        <!-- Image -->
+        <Image src={user} alt="Imagen" width={120}/>
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est et unde iste impedit, excepturi, aperiam eos repellendus error hic, cupiditate sequi delectus suscipit repudiandae dicta. Nam enim cupiditate unde dignissimos?</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eos impedit rem ut enim adipisci eligendi, provident repudiandae molestias repellendus maxime necessitatibus laudantium minima eius? Facilis neque excepturi cumque eum!</p>
@@ -24,18 +25,23 @@ let btngithub = "btn__github";
     <article class="portfolio__intro--projects">
       <div class="projects__container">
         <div class="projects__card" id="project">
-          <!-- <Image src={photo} alt="Imagen proyecto" /> -->
+          <h2 class="article__title">Clonado de pagina web</h2>
+          <div class="project__img">
+            <Image src={photo} alt="Imagen proyecto" width={400} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aspernatur? Illum, nam consequatur molestias suscipit iure incidunt consequuntur similique aperiam repellendus ipsa aut quaerat neque excepturi temporibus. Optio, itaque corporis.</p>
-          <Button btn={btngithub}>
-            Abrir en Github
-          </Button>
+          <div class="project__button">
+            <Button btn={btngithub}>
+              Abrir en Github
+            </Button>
+          </div>
         </div>
       </div>
     </article>
     <article class="portfolio__intro--experience">
-      <h2 class="experience" id="experience">Experiencia laboral</h2>
+      <h2 class="article__title" id="experience">Experiencia laboral</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum magnam assumenda veniam labore vel. Eos itaque perspiciatis consequuntur labore repellat esse quam quos, exercitationem blanditiis quaerat adipisci voluptatem sequi impedit.</p>
-      <h2 class="experience" >Experiencia academica</h2>
+      <h2 class="article__title" >Experiencia academica</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste dolorum, ducimus laboriosam consequuntur ullam architecto. Amet ducimus consectetur quam explicabo minus quo, sequi optio totam fuga blanditiis exercitationem qui!</p>
     </article>
   </section>
