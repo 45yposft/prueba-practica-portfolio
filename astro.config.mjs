@@ -8,5 +8,5 @@ export default defineConfig({
     defaultStrategy: 'viewport',
   },
   site: 'https://45yposft.github.io',
-  base: '/prueba-practica-portfolio',
+  // base: '/prueba-practica-portfolio',
 });
